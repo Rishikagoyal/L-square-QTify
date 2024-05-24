@@ -3,22 +3,19 @@ import './App.css';
 import Navbar from '../src/components/Navbar/Navbar';
 import Home from '../src/components/Home';
 import Header from '../src/components/Header/Header';
-import {Route, Routes,BrowserRouter as Router} from 'react-router-dom';
+import {Route, Routes,BrowserRouter as Router,Outlet} from 'react-router-dom';
+import {StyledEngineProvider} from '@mui/material/styles';
 
 function App() {
   return (
 
-    <> 
-    <Navbar/>
-    <Header/>
-    <Routes>
-   
-   
+    <>
+    <StyledEngineProvider injectFirst>
+      <Navbar/>
     
-    <Route exact path='/home' element={<Home/>} />
-  
-  
-    </Routes></>
+    </StyledEngineProvider> 
+    
+    </>
     
     
   );
