@@ -4,7 +4,7 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Home from '../src/components/Home';
-import {BrowserRouter as Router, RouterProvider, createBrowserRouter} from 'react-router-dom';
+import { RouterProvider, createBrowserRouter} from 'react-router-dom';
 
 const router= createBrowserRouter([
 

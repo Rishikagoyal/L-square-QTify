@@ -1,8 +1,8 @@
 import React from 'react';
-import styles from './Header.module.css';
+import styles from './Hero.module.css';
 import headphones from '../../assets/vibrating-headphone1.png';
 
-const Header=()=>{
+const Hero=()=>{
     return(
         <>
         <div className={styles.headerDiv} >
@@ -15,4 +15,4 @@ const Header=()=>{
         </>
     )
 }
-export default Header;
+export default Hero;
